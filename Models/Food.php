@@ -4,7 +4,7 @@ class Food extends Product
 {
     /**
      * @var string $ingredients Recipe ingredients
-     * @var string $weight Product weight
+     * @var int $weight Product weight
      */
     private $ingredients;
     private $weight;
@@ -13,9 +13,9 @@ class Food extends Product
      * Constructor
      *
      * @param string $_ingredient 
-     * @param string $_weight
+     * @param int $_weight
      */
-    public function __construct($_name, $_img, $_animal, $_price, $_ean, string $_ingredient, string $_weight)
+    public function __construct($_name, $_img, $_animal, $_price, $_ean, array $_ingredient, int $_weight)
     {
         parent::__construct($_name, $_img, $_animal, $_price, $_ean);
         $this->ingredients = $_ingredient;

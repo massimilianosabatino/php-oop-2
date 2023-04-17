@@ -18,6 +18,6 @@ class Animal
     public function __construct(string $_type, string $_image)
     {
         $this->type = $_type;
-        $this->image = $_image;
+        $this->image = __DIR__.'/src/img/'.  $_image;
     }
 }
