@@ -14,14 +14,14 @@ class Accessory extends Product
     /**
      * Constructor
      *
-     * @param string $_ingredient 
+     * @param string $_material 
      * @param string $_size
      * @param array $_category
      */
-    public function __construct($_name, $_img, $_animal, $_price, $_ean, string $_ingredient, string $_size, array $_category)
+    public function __construct($_name, $_img, $_animal, $_price, $_ean, string $_material, string $_size, array $_category)
     {
         parent::__construct($_name, $_img, $_animal, $_price, $_ean);
-        $this->material = $_ingredient;
+        $this->material = $_material;
         $this->size = $_size;
         $this->category = $_category;
     }

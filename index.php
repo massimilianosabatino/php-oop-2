@@ -16,9 +16,21 @@ $fish = new Animal('Pesce', 'fish.png');
 $products = [];
 foreach ($store as $product)
 {
-    $temp_product = new Food($product['name'], $product['img'], $product['animal'], $product['price'], $product['ean'], $product['ingredients'], $product['weight']);
-    var_dump($temp_product);
-    die();
-    // $products[] = $temp_product;
+    switch ($product['category'])
+    {
+        case 'food':
+            $temp_product = new Food ($product['name'], $product['img'], $product['animal'], $product['price'], $product['ean'], $product['ingredients'], $product['weight']);
+            break;
+        case 'game':
+            $temp_product = new Game ($product['name'], $product['img'], $product['animal'], $product['price'], $product['ean'], $product['description'], $product['size']);
+            break;
+        case 'accessory':
+            $temp_product = new Accessory ($product['name'], $product['img'], $product['animal'], $product['price'], $product['ean'], $product['mateerial'], $product['size'], $product['category']);
+            break;
+    } 
+    $products[] = $temp_product;
 }
-var_dump($products);
+
+
+
+
