@@ -6,8 +6,8 @@ class Animal
      * @var string $type Type of animal
      * @var string $img Image type of animal
      */
-    private $type;
-    private $image;
+    public $type;
+    public $image;
     
     /**
      * Constructor
@@ -18,6 +18,6 @@ class Animal
     public function __construct(string $_type, string $_image)
     {
         $this->type = $_type;
-        $this->image = __DIR__.'/src/img/'.  $_image;
+        $this->image = 'src/img/'.  $_image;
     }
 }

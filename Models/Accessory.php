@@ -9,9 +9,9 @@ class Accessory extends Product
      * @var string $size Image type of animal
      * @var array $category Product category
      */
-    private $material;
-    private $size;
-    private $category;
+    public $material;
+    public $size;
+    public $sub_cat;
     
     /**
      * Constructor
@@ -20,11 +20,11 @@ class Accessory extends Product
      * @param string $_size
      * @param array $_category
      */
-    public function __construct($_name, $_img, $_animal, $_price, $_ean, string $_material, string $_size, array $_category)
+    public function __construct($_name, $_img, $_animal, $_price, $_ean, string $_material, string $_size, string $_category)
     {
         parent::__construct($_name, $_img, $_animal, $_price, $_ean);
         $this->material = $_material;
         $this->size = $_size;
-        $this->category = $_category;
+        $this->sub_cat = $_category;
     }
 }

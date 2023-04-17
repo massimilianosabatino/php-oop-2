@@ -3,12 +3,12 @@ require_once __DIR__. '/Animal.php';
 
 class Product
 {
-    private $name;
-    private $img;
-    private $animal;
-    private $price;
-    private $ean;
-    private $stock = true;
+    public $name;
+    public $img;
+    public $animal;
+    public $price;
+    public $ean;
+    public $stock = true;
 
     /**
      * Constructor

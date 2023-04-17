@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+header {
+    margin: 25px 50px;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+
+li {
+    width: calc(100% / 3);
+    margin-bottom: 25px;
+}
+
+.card {
+    border: 1px solid #282828;
+    margin: 10px;
+    padding: 10px;
+    
+}
+
+.image {
+    max-width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto 15px auto;
+}
+
+.image img {
+    width: 100%;
+    display: block;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    max-height: 15px;
+    max-width: 15px;
+    margin-right: 6px;
+}
+
+.icon img {
+    width: 100%;
+}

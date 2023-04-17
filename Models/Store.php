@@ -25,10 +25,22 @@ class Store
                     $temp_product = new Game($product['name'], $product['img'], $product['animal'], $product['price'], $product['ean'], $product['description'], $product['size']);
                     break;
                 case 'accessory':
-                    $temp_product = new Accessory($product['name'], $product['img'], $product['animal'], $product['price'], $product['ean'], $product['mateerial'], $product['size'], $product['category']);
+                    $temp_product = new Accessory($product['name'], $product['img'], $product['animal'], $product['price'], $product['ean'], $product['material'], $product['size'], $product['sub_cat']);
                     break;
             }
             self::$products[] = $temp_product;
         }
     }
+
+    public static function getProduct()
+    {
+        
+        foreach (self::$products as $el)
+        {
+            
+            return print $el;
+        }
+    }
 }
+
+$products = new Store($store);

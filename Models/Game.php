@@ -8,8 +8,8 @@ class Game extends Product
      * @var string $description Product short description
      * @var string $size Product size
      */
-    private $description;
-    private $size;
+    public $description;
+    public $size;
     
     /**
      * Constructor

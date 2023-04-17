@@ -8,8 +8,8 @@ class Food extends Product
      * @var string $ingredients Recipe ingredients
      * @var int $weight Product weight
      */
-    private $ingredients;
-    private $weight;
+    public $ingredients;
+    public $weight;
     
     /**
      * Constructor
