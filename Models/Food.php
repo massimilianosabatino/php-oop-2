@@ -1,6 +1,6 @@
 <?php
 
-class Food
+class Food extends Product
 {
     /**
      * @var string $ingredients Recipe ingredients
@@ -15,8 +15,9 @@ class Food
      * @param string $_ingredient 
      * @param string $_weight
      */
-    public function __construct(string $_ingredient, string $_weight)
+    public function __construct($_name, $_img, $_animal, $_price, $_ean, string $_ingredient, string $_weight)
     {
+        parent::__construct($_name, $_img, $_animal, $_price, $_ean);
         $this->ingredients = $_ingredient;
         $this->weight = $_weight;
     }
