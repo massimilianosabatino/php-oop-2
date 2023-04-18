@@ -16,7 +16,7 @@ require_once __DIR__. '/Models/Store.php';
 <body>
     <header>Boolshop</header>
     <ul class="products">
-        <?php foreach (Store::$products as $product): ?>
+        <?php foreach ($products->get_store() as $product): ?>
         <li>
             <div class="card">
                 <div class="image">

@@ -7,7 +7,7 @@ require_once __DIR__. '/Accessory.php';
 class Store
 {
     private $store;
-    public static $products;
+    private $products;
     function __construct(array $_store)
     {
         $this->store = $_store;
@@ -28,8 +28,12 @@ class Store
                     $temp_product = new Accessory($product['name'], $product['img'], $product['animal'], $product['price'], $product['ean'], $product['material'], $product['size'], $product['sub_cat']);
                     break;
             }
-            self::$products[] = $temp_product;
+            $this->products[] = $temp_product;
         }
+    }
+
+    public function get_store(){
+        return $this->products;
     }
 }
 
