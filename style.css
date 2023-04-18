@@ -53,3 +53,7 @@ li {
 .icon img {
     width: 100%;
 }
+
+label {
+    display: block;
+}

@@ -1,9 +1,12 @@
 <?php
-require_once __DIR__ . '/../db.php';
+// require_once __DIR__ . '/../db.php';
 require_once __DIR__. '/Food.php';
 require_once __DIR__. '/Game.php';
 require_once __DIR__. '/Accessory.php';
 
+//Get data from Json database
+$get_db_json = file_get_contents(__DIR__. '/../db.json');
+$store = json_decode($get_db_json, true);
 class Store
 {
     private $store;
