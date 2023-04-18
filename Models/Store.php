@@ -37,4 +37,4 @@ class Store
     }
 }
 
-$products = new Store($store);
+$products_store = new Store($store);

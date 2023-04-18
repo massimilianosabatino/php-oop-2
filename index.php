@@ -1,7 +1,6 @@
 <?php
 require_once __DIR__. '/Models/Store.php';
 
-
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +15,7 @@ require_once __DIR__. '/Models/Store.php';
 <body>
     <header>Boolshop</header>
     <ul class="products">
-        <?php foreach ($products->get_store() as $product): ?>
+        <?php foreach ($products_store->get_store() as $product): ?>
         <li>
             <div class="card">
                 <div class="image">
