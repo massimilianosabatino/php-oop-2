@@ -1,15 +1,15 @@
 <?php
 
 require_once __DIR__. '/Product.php';
-
+require_once __DIR__. '/../Trait/Size.php';
 class Game extends Product
 {
+    use Size;
     /**
      * @var string $description Product short description
      * @var string $size Product size
      */
     private $description;
-    private $size;
     
     /**
      * Constructor
@@ -27,10 +27,5 @@ class Game extends Product
     public function get_description()
     {
         return $this->description;
-    }
-
-    public function get_size()
-    {
-        return $this->size;
     }
 }

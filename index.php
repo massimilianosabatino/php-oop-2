@@ -29,7 +29,7 @@ require_once __DIR__. '/Models/Store.php';
                     <div class="category">
                         <?php foreach ($product->get_animal() as $animal): ?>
                             <div class="icon">
-                                <img src="<?php echo $animal->get_image() ?>" alt="Icona <?php echo $animal->get_type() ?>">
+                                <img src="<?php echo $animal->get_img() ?>" alt="Icona <?php echo $animal->get_type() ?>">
                             </div>
                             <h3>
                                 <?php echo $animal->get_type() ?>

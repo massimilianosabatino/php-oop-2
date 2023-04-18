@@ -1,10 +1,12 @@
 <?php 
 require_once __DIR__. '/Animal.php';
+require_once __DIR__. '/../Trait/Image.php';
 
 class Product
 {
+    use Image;
+
     private $name;
-    private $img;
     private $animal;
     private $price;
     private $ean;
@@ -59,11 +61,6 @@ class Product
     public function get_name()
     {
         return $this->name;
-    }
-
-    public function get_img()
-    {
-        return $this->img;
     }
 
     public function get_animal()

@@ -1,16 +1,17 @@
 <?php
 
 require_once __DIR__. '/Product.php';
+require_once __DIR__. '/../Trait/Size.php';
 
 class Accessory extends Product
 {
+    use Size;
     /**
      * @var string $material Type of animal
      * @var string $size Image type of animal
      * @var array $category Product category
      */
     private $material;
-    private $size;
     private $sub_cat;
     
     /**
@@ -31,11 +32,6 @@ class Accessory extends Product
     public function get_material()
     {
         return $this->material;
-    }
-
-    public function get_size()
-    {
-        return $this->size;
     }
 
     public function get_sub_cat()
