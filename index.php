@@ -20,33 +20,33 @@ require_once __DIR__. '/Models/Store.php';
         <li>
             <div class="card">
                 <div class="image">
-                    <img src="<?php echo $product->img; ?>" alt="<?php echo $product->name; ?>">
+                    <img src="<?php echo $product->get_img(); ?>" alt="<?php echo $product->get_name(); ?>">
                 </div>
                 <div class="info">
                     <h2>
-                        <?php echo $product->name; ?>
+                        <?php echo $product->get_name(); ?>
                     </h2>
                     <div class="category">
-                        <?php foreach ($product->animal as $animal): ?>
+                        <?php foreach ($product->get_animal() as $animal): ?>
                             <div class="icon">
-                                <img src="<?php echo $animal->image ?>" alt="Icona <?php echo $animal->type ?>">
+                                <img src="<?php echo $animal->get_image() ?>" alt="Icona <?php echo $animal->get_type() ?>">
                             </div>
                             <h3>
-                                <?php echo $animal->type ?>
+                                <?php echo $animal->get_type() ?>
                             </h3>
                         <?php endforeach; ?>
                     </div>
                     <div class="details">
-                        <div>Prezzo: € <?php echo $product->price; ?></div>
+                        <div>Prezzo: € <?php echo $product->get_price(); ?></div>
                         <?php if ($product instanceof Food): ?>
-                            <div>Peso netto: <?php echo $product->weight; ?> gr</div>
-                            <div>Ingredienti: <?php echo implode(', ', $product->ingredients); ?></div>
+                            <div>Peso netto: <?php echo $product->get_weight(); ?> gr</div>
+                            <div>Ingredienti: <?php echo implode(', ', $product->get_ingredients()); ?></div>
                         <?php elseif ($product instanceof Game): ?>
-                            <div>Caratteristiche: <?php echo $product->description; ?> gr</div>
-                            <div>Dimensioni: <?php echo $product->size; ?> gr</div>
+                            <div>Caratteristiche: <?php echo $product->get_description(); ?> gr</div>
+                            <div>Dimensioni: <?php echo $product->get_size(); ?> gr</div>
                         <?php elseif ($product instanceof Accessory): ?>
-                            <div>Materiale: <?php echo $product->material; ?> gr</div>
-                            <div>Dimensione: <?php echo $product->size; ?> gr</div>
+                            <div>Materiale: <?php echo $product->get_material(); ?> gr</div>
+                            <div>Dimensione: <?php echo $product->get_size(); ?> gr</div>
                         <?php endif; ?>
                     </div>
                 </div>

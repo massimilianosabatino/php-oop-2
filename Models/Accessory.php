@@ -9,9 +9,9 @@ class Accessory extends Product
      * @var string $size Image type of animal
      * @var array $category Product category
      */
-    public $material;
-    public $size;
-    public $sub_cat;
+    private $material;
+    private $size;
+    private $sub_cat;
     
     /**
      * Constructor
@@ -26,5 +26,20 @@ class Accessory extends Product
         $this->material = $_material;
         $this->size = $_size;
         $this->sub_cat = $_category;
+    }
+
+    public function get_material()
+    {
+        return $this->material;
+    }
+
+    public function get_size()
+    {
+        return $this->size;
+    }
+
+    public function get_sub_cat()
+    {
+        return $this->sub_cat;
     }
 }

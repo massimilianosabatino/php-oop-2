@@ -6,8 +6,8 @@ class Animal
      * @var string $type Type of animal
      * @var string $img Image type of animal
      */
-    public $type;
-    public $image;
+    private $type;
+    private $image;
     
     /**
      * Constructor
@@ -19,5 +19,15 @@ class Animal
     {
         $this->type = $_type;
         $this->image = 'src/img/'.  $_image;
+    }
+
+    public function get_type()
+    {
+        return $this->type;
+    }
+
+    public function get_image()
+    {
+        return $this->image;
     }
 }

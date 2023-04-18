@@ -3,12 +3,12 @@ require_once __DIR__. '/Animal.php';
 
 class Product
 {
-    public $name;
-    public $img;
-    public $animal;
-    public $price;
-    public $ean;
-    public $stock = true;
+    private $name;
+    private $img;
+    private $animal;
+    private $price;
+    private $ean;
+    private $stock = true;
 
     /**
      * Constructor
@@ -54,5 +54,35 @@ class Product
             }
         }
         return $animal_temp;
+    }
+
+    public function get_name()
+    {
+        return $this->name;
+    }
+
+    public function get_img()
+    {
+        return $this->img;
+    }
+
+    public function get_animal()
+    {
+        return $this->animal;
+    }
+
+    public function get_price()
+    {
+        return $this->price;
+    }
+
+    public function get_ean()
+    {
+        return $this->ean;
+    }
+
+    public function get_stock()
+    {
+        return $this->stock;
     }
 }

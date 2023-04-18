@@ -8,8 +8,8 @@ class Game extends Product
      * @var string $description Product short description
      * @var string $size Product size
      */
-    public $description;
-    public $size;
+    private $description;
+    private $size;
     
     /**
      * Constructor
@@ -22,5 +22,15 @@ class Game extends Product
         parent::__construct($_name, $_img, $_animal, $_price, $_ean);
         $this->description = $_description;
         $this->size = $_size;
+    }
+
+    public function get_description()
+    {
+        return $this->description;
+    }
+
+    public function get_size()
+    {
+        return $this->size;
     }
 }

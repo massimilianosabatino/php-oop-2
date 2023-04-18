@@ -31,16 +31,6 @@ class Store
             self::$products[] = $temp_product;
         }
     }
-
-    public static function getProduct()
-    {
-        
-        foreach (self::$products as $el)
-        {
-            
-            return print $el;
-        }
-    }
 }
 
 $products = new Store($store);
