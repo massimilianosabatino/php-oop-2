@@ -1,1 +1,71 @@
-[{"name":"Uovo di pasqua","img":"#","animal":["cane"],"price":"12","ean":"134214214","category":"food","ingredients":["Pane","acqua"],"weight":14},{"name":"Croccantini Trainer","img":"https:\/\/www.modacani.it\/prodotti\/big\/2592.jpg","price":18.99,"ean":12421453,"animal":["cane"],"ingredients":["Manzo","Prosciutto"],"weight":2,"category":"food"},{"name":"Pappetta Trainer","img":"https:\/\/www.hillspet.it\/content\/dam\/pim\/hills\/it_it\/sd\/pouch\/sp-feline-science-plan-adult-light-chicken-or-ocean-fish-pouch-productShot_500.png","price":18.99,"ean":12421453,"animal":["gatto"],"ingredients":["Manzo","Riso"],"weight":2,"category":"food"},{"name":"Topini di peluche","img":"https:\/\/www.loradeglianimali.it\/36653-large_default\/trixie-topo-peluche-da-10-cm-per-gatti.jpg","price":18.99,"ean":12421453,"animal":["pesce"],"description":"Morbido con codino in corda","size":"8,5 cm x 15 cm","category":"game"},{"name":"Voliera vilma","img":"https:\/\/cdn.shopify.com\/s\/files\/1\/0288\/2152\/0466\/products\/voliera-per-uccelli-fabienne.jpg?v=1605285503","price":18.99,"ean":12421453,"animal":["uccello"],"material":"Legno","size":"8,5 cm x 15 cm","sub_cat":"Casa","category":"accessory"},{"name":"Piccola stella","img":"https:\/\/images.emojiterra.com\/google\/android-12l\/512px\/2b50.png","animal":["cane"],"price":1,"ean":12,"category":"food","ingredients":["Coppa, lippa, nuova"],"weight":32},{"name":"Piccola cosa","img":"https:\/\/www.laramind.com\/blog\/wp-content\/uploads\/2017\/07\/Untitled-design-12.png","animal":["cane"],"price":2,"ean":123,"category":"food","ingredients":["Tanta"],"weight":2}]
+[
+    {
+        "name": "Croccantini Trainer",
+        "img": "https:\/\/www.modacani.it\/prodotti\/big\/2592.jpg",
+        "price": 18.99,
+        "ean": 12421453,
+        "animal": [
+            "cane"
+        ],
+        "ingredients": [
+            "Manzo",
+            "Prosciutto"
+        ],
+        "weight": 2,
+        "category": "food"
+    },
+    {
+        "name": "Pappetta Trainer",
+        "img": "https:\/\/www.hillspet.it\/content\/dam\/pim\/hills\/it_it\/sd\/pouch\/sp-feline-science-plan-adult-light-chicken-or-ocean-fish-pouch-productShot_500.png",
+        "price": 18.99,
+        "ean": 12421453,
+        "animal": [
+            "gatto"
+        ],
+        "ingredients": [
+            "Manzo",
+            "Riso"
+        ],
+        "weight": 2,
+        "category": "food"
+    },
+    {
+        "name": "Topini di peluche",
+        "img": "https:\/\/www.loradeglianimali.it\/36653-large_default\/trixie-topo-peluche-da-10-cm-per-gatti.jpg",
+        "price": 18.99,
+        "ean": 12421453,
+        "animal": [
+            "pesce"
+        ],
+        "description": "Morbido con codino in corda",
+        "size": "8,5 cm x 15 cm",
+        "category": "game"
+    },
+    {
+        "name": "Voliera vilma",
+        "img": "https:\/\/cdn.shopify.com\/s\/files\/1\/0288\/2152\/0466\/products\/voliera-per-uccelli-fabienne.jpg?v=1605285503",
+        "price": 18.99,
+        "ean": 12421453,
+        "animal": [
+            "uccello"
+        ],
+        "material": "Legno",
+        "size": "8,5 cm x 15 cm",
+        "sub_cat": "Casa",
+        "category": "accessory"
+    },
+    {
+        "name": "Piccola stella",
+        "img": "https:\/\/images.emojiterra.com\/google\/android-12l\/512px\/2b50.png",
+        "animal": [
+            "cane"
+        ],
+        "price": 1,
+        "ean": 12,
+        "category": "food",
+        "ingredients": [
+            "Coppa, lippa, nuova"
+        ],
+        "weight": 32
+    }
+]
