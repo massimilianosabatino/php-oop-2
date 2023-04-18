@@ -11,6 +11,12 @@ try {
     if ($_POST['price'] === '' OR $_POST['price'] <= 0 ) {
         throw new Exception('Il prezzo inserito deve essere superiore a 0');
     }
+    // if ($_POST['ean'] === '' OR $_POST['ean'] <= 0 ) {
+    //     throw new Exception('Il codice EAN inserito deve essere superiore a 0');
+    // }
+    if ($_POST['weight'] === '' OR $_POST['weight'] <= 0 ) {
+        throw new Exception('Il peso inserito deve essere superiore a 0');
+    }
 
     //Get data from Admin page
     $name = isset($_POST['name']) ?  $_POST['name'] : null;
@@ -33,15 +39,15 @@ try {
             'name' => $name,
             'img' => $img,
             'animal' => [$animal], //Sistemare array
-            'price' => $price,
-            'ean' => $ean,
+            'price' => floatval($price),
+            'ean' => intval($ean),
             'category' => $category,
         ];
     
         //Add food attribute
         if ($category !== null && $category === 'food') {
             $new_product['ingredients'] = [$ingredients]; //sistemare array
-            $new_product['weight'] = $weight;
+            $new_product['weight'] = intval($weight);
         }
     
         //Add game attribute
@@ -59,11 +65,13 @@ try {
         $db[] = $new_product;
     };
 
+    //Save to Json
+    $put_db = json_encode($db);
+    file_put_contents(__DIR__ . '/../db.json', $put_db);
+    
+    header("location: /php-oop-2/admin.php");
 } catch (Exception $e) {
     echo $e->getMessage() . ' <a href="/php-oop-2/admin.php">torna alla pagina di inserimento</a>';
     
 } 
 
-//Save to Json
-$put_db = json_encode($db);
-file_put_contents(__DIR__ . '/../db.json', $put_db);

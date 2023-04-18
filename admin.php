@@ -49,7 +49,7 @@
                 <input type="text" name="ingredients" id="ingredients">
             </label>
             <label for="weight">Peso - Solo cibo -
-                <input type="text" name="weight" id="weight">
+                <input type="number" name="weight" id="weight">
             </label>
             <label for="description">Descrizione - Solo giochi -
                 <input type="text" name="description" id="description">
@@ -62,6 +62,7 @@
             </label>
             <button type="submit">Invia</button>
         </form>
+        <a href="/php-oop-2">Torna alla home</a>
     </main>
 </body>
 </html>

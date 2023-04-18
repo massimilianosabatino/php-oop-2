@@ -13,7 +13,14 @@ require_once __DIR__. '/Models/Store.php';
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>Boolshop</header>
+    <header>
+        <h1>Boolshop</h1>
+        <div>
+            <a href="/php-oop-2/admin.php">
+                Vai al pannello di amministrazione        
+            </a>
+        </div>
+    </header>
     <ul class="products">
         <?php foreach ($products_store->get_store() as $product): ?>
         <li>
